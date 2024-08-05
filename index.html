@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/favicon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -126,17 +126,6 @@
                     <span>arXiv</span>
                   </a>
                 </span>
-                <!-- Video Link. -->
-                <!-- <span class="link-block">
-                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                    </span>
-                    <span>Video</span>
-                  </a>
-                </span> -->
-                <!-- Code Link. -->
                 <span class="link-block">
                   <a href="https://github.com/camel-ai/crab" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -146,15 +135,15 @@
                   </a>
                 </span>
                 <!-- Dataset Link. -->
-                <!-- <span class="link-block">
-                  <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                <span class="link-block">
+                  <a href="https://github.com/camel-ai/crab/tree/main/crab-benchmark-v0"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="far fa-images"></i>
+                      <i class="ai ai-open-data"></i>
                     </span>
-                    <span>Data</span>
+                    <span>CRAB Benchmark-v0</span>
                   </a>
-                </span> -->
+                </span>
               </div>
 
             </div>
@@ -164,80 +153,14 @@
     </div>
   </section>
 
-  <!-- <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <video id="teaser" autoplay muted loop playsinline height="100%">
-          <source src="./static/videos/teaser.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-          free-viewpoint
-          portraits.
-        </h2>
-      </div>
-    </div>
-  </section> -->
-  <!-- 
-
-  <section class="hero is-light is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-steve">
-            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/steve.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-chair-tp">
-            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/chair-tp.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-shiba">
-            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/shiba.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-fullbody">
-            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/fullbody.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-blueshirt">
-            <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/blueshirt.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-mask">
-            <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/mask.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-coffee">
-            <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/coffee.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-toby">
-            <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/toby2.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-
   <section class="section">
     <div class="container is-max-desktop">
       <!-- Paper video. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Introduction Video</h2>
+          <!-- <h2 class="title is-3">Introduction Video</h2> -->
           <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/HAKC10pw-gM?si=hDlH3JKhveraJ4J1" frameborder="0"
               allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -247,22 +170,14 @@
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              The development of autonomous agents increasingly relies on Multimodal Language Models (MLMs) to perform
-              tasks described in natural language with GUI environments, such as websites, desktop computers, or mobile
-              phones. Existing benchmarks for MLM agents in interactive environments are limited by their focus on a
-              single environment, lack of detailed and generalized evaluation methods, and the complexities of
-              constructing tasks and evaluators. To overcome these limitations, we introduce Crab, the first agent
-              benchmark framework designed to support cross-environment tasks, incorporating a graph-based fine-grained
-              evaluation method and an efficient mechanism for task and evaluator construction. Our framework supports
-              multiple devices and can be easily extended to any environment with a Python interface. Leveraging Crab,
-              we developed a cross-platform Crab Benchmark-v0 comprising 100 tasks in computer desktop and mobile phone
-              environments. We evaluated four advanced MLMs using different single and multi-agent system configurations
-              on this benchmark. The experimental results demonstrate that the single agent with GPT-4o achieves the
-              best completion ratio of 35.26%. All framework code, agent code, and task datasets are publicly available
-              at https://github.com/camel-ai/crab.
+              CRAB aims to become a general-purpose agent benchmark framework for Multimodal Language Model (MLM)
+              agents. CRAB provides an end-to-end while easy-to-use framework to build agents, operate environments, and
+              create benchmarks to evaluate them, featuring three key components: cross-environment support, a graph
+              evaluator, and task generation. We present <i>CRAB Benchmark-v0</i>, developed using the CRAB framework,
+              which includes 100 tasks across 2 environments (Ubuntu and Android), tested with 4 different MLMs under 3
+              distinct communication settings.
             </p>
           </div>
         </div>
@@ -270,6 +185,38 @@
       <!--/ Abstract. -->
     </div>
   </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3 has-text-centered">Features</h2>
+          <div class="content has-text-justified">
+            <img src="./static/images/crab-main-diagram.png">
+            <ul>
+              <li><strong>Cross-environments</strong>: CRAB supports multiple environments, ensuring that
+                agents can seamlessly adapt and excel across different interfaces.</li>
+              <li><strong>Graph evaluatior</strong>: With fine-grained evaluation, CRAB goes beyond binary success rates
+                to provide a detailed analysis of agent performance, highlighting their strengths and pinpointing areas
+                for improvement.</li>
+              <li><strong>Task Generation</strong>: CRAB automates task creation using a graph-based method. By
+                combining multiple sub-tasks into complex tasks, CRAB generates dynamic tasks that closely mimic
+                real-world scenarios, saving time and reducing the effort required for manual task creation.</li>
+              <li><strong>Easy-to-use</strong>: All agent operations (actions), observations, and benchmark evaluators
+                are defined by Python functions. Therefore, adding a new environment to CRAB requires only a few lines
+                of Python code. The benchmark configuration follows the declarative programming paradigm, making it
+                really easy to reproduce any experiment environment.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--/ Concurrent Work. -->
+    </div>
+  </section>
+
 
   <section class="section">
     <div class="container is-max-desktop">
@@ -281,16 +228,17 @@
       </div>
 
       <div class="columns is-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-full-width">
           <div class="content">
             <p>
-              Open "Slack" in Ubuntu, navigate to "multi-modal-benchmark" channel, summarize the last two messages, then
+              Open "Slack" in Ubuntu, navigate to "multi-modal-benchmark" channel, summarize the last two messages,
+              then
               use "Messages" app in android phone to send the to the first contact in the list.
             </p>
             <p class="has-text-centered" style="color:#8A8B8C;">
               Settings: OpenAI GPT-4o + Multi-agent by Functionality
             </p>
-            <video id="dollyzoom" controls muted playsinline height="100%">
+            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
               <source src="./static/videos/demo1_slack_to_message.mp4" type="video/mp4">
             </video>
           </div>
@@ -302,7 +250,7 @@
 
       <!-- Demo2 -->
       <div class="columns is-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-full-width">
           <div class="content">
             <p>
               Open "Tasks" app on Android, check the first incomplete task, then perform the task according to its
@@ -311,7 +259,7 @@
             <p class="has-text-centered" style="color:#8A8B8C;">
               Settings: OpenAI GPT-4o + Multi-agent by Functionality
             </p>
-            <video id="dollyzoom" controls muted playsinline height="100%">
+            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
               <source src="./static/videos/demo2_task_to_settings.mp4" type="video/mp4">
             </video>
           </div>
@@ -323,22 +271,43 @@
 
       <!-- Demo3 -->
       <div class="columns is-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-full-width">
           <div class="content">
             <p>
-              Open "Calendar" app on Android, summarize all schedules today. Then, in Ubuntu, create a markdown file at
-              "/home/crab/assets/plan.md" with each event as a checkbox bullet point using Terminal and Vim.
+              Open "Calendar" app on Android, summarize all schedules today. Then, in Ubuntu, create a markdown file
+              at "/home/crab/assets/plan.md" with each event as a checkbox bullet point using Terminal and Vim.
             </p>
             <p class="has-text-centered" style="color:#8A8B8C;">
               Settings: OpenAI GPT-4o + Single Agent
             </p>
-            <video id="dollyzoom" controls muted playsinline height="100%">
+            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
               <source src="./static/videos/demo3_calendar_to_vim.mp4" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
       <!--/ Demo3 -->
+
+      <hr>
+
+      <!-- Demo4 -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <p>
+              Please open the X app on my phone, search for CAMEL-AI.org, check the latest post, summarize them, and
+              then send the summary to Tianqi Xu on Slack from my PC.
+            </p>
+            <p class="has-text-centered" style="color:#8A8B8C;">
+              Settings: OpenAI GPT-4o + Single Agent
+            </p>
+            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
+              <source src="./static/videos/demo4_X_to_slack.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!--/ Demo4 -->
 
       <div class="content">
         <p class="is-centered" style="color:#8A8B8C;">
@@ -348,7 +317,6 @@
       </div>
     </div>
   </section>
-
 
 
   <section class="section">
@@ -398,9 +366,9 @@
         </div>
       </div>
       <!--/ Concurrent Work. -->
-
     </div>
   </section>
+
 
 
   <section class="section" id="BibTeX">
